@@ -61,11 +61,8 @@ namespace igl
 	std::vector<std::vector<REAL > > & V,
 	std::vector<std::vector<int> > & T,
         std::vector<std::vector<int> > & F, 
-	std::vector<std::vector<REAL> > & R,// region marks for tetrahedrons
-	std::vector<std::vector<int > > &N, // neighborlist per tet
-	std::vector<std::vector<int > >	&PT, // Point to tet list per point
-	std::vector<std::vector<int > > &FT, // face to tet list
-	size_t nR); // number of regions    
+	std::vector<std::vector<REAL> > & R,
+	size_t nR);   
 
       // Wrapper with Eigen types
       // Templates:
@@ -77,9 +74,6 @@ namespace igl
         Eigen::PlainObjectBase<DerivedV>& V,
         Eigen::PlainObjectBase<DerivedT>& T,
         Eigen::PlainObjectBase<DerivedF>& F,
-	Eigen::PlainObjectBase<DerivedT>& N,
-	Eigen::PlainObjectBase<DerivedT>& PT,
-	Eigen::PlainObjectBase<DerivedT>& FT, 
 	size_t nR);
     }
   }
